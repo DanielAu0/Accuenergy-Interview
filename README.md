@@ -1,25 +1,22 @@
-# accuenergy-project
+# Accuenergy Coding Assignment (Daniel Au)
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to my Accuenergy Coding Assignment! 
 
-## Recommended IDE Setup
+This project involves the development of a web page with various features related to location search and display. 
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![accuenergy-demo](https://github.com/DanielAu0/Accuenergy-Interview/assets/52058686/0fd12ee7-88c1-419f-b33d-c3baad2a220e)
 
-## Type Support for `.vue` Imports in TS
+## Task
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- A button to allow users to acquire their current location from their browser.
+- A search module that lets users input the name of a location. The search feature is triggered by both button clicks and pressing the enter key on the keyboard.
+- Display the location on a map and add a marker to each searched location every time the location changes.
+- A table with pagination to show all searched places:
+    - Display a maximum of 10 records on each page.
+    - A checkbox at the beginning of each row to let users select multiple records at the same time.
+    - A delete button on the top to remove all selected records as well as their markers on the map.
+    - Display the time zone and local time of the latest searched location.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
@@ -43,22 +40,6 @@ npm run build
 
 ```sh
 npm run test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
 ```
 
 ### Lint with [ESLint](https://eslint.org/)

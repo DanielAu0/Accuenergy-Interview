@@ -1,0 +1,97 @@
+@import './base.css';
+
+/* Containers */
+
+.content {
+  display: flex;
+  height: 80vh;
+  padding: 10px;
+}
+
+.map-container {
+  width: 50%;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.map-content {
+  width: 100%;
+  height: calc(100% - 70px);
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.table-content {
+  position: relative;
+  width: 50%;
+}
+
+/* Tables */
+
+table {
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 25px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead tr th {
+  background-color: #00a4af !important;
+  color: #ffffff !important;
+  text-align: left;
+}
+
+th {
+  font-size: 20px;
+}
+
+/* Buttons  */
+
+.btn-primary {
+  background-color: #00a4af !important;
+}
+
+.btn {
+  font-size: 18px;
+  border: none !important;
+  border-radius: 6px !important;
+}
+
+/* Pagination  */
+
+.pagination {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.page-item > a {
+  color: #00a4af;
+}
+
+.active > .page-link,
+.page-link.active {
+  background-color: #00a4af !important;
+  border-color: #00a4af !important;
+  color: #ffffff !important;
+}
+
+/* Forms  */
+
+.checkbox-container {
+  width: 50px;
+}
+
+.form-check-input:checked {
+  background-color: #00a4af !important;
+  border-color: #00a4af !important;
+}
+
+/* Alerts  */
+
+.alert {
+  margin: 0 10px;
+}
